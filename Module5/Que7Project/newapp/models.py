@@ -16,7 +16,7 @@ class Product_sub_category_details(models.Model):
     model_name = models.CharField(max_length=30, default="")
     price = models.IntegerField()
     description = models.CharField(max_length=200, default="")
-    porduct_image = models.ImageField(upload_to="media/product_images", default="media/default.png")
+    product_image = models.ImageField(upload_to="product_images", default="/default.png")
 
     def __str__(self) -> str:
         return self.model_name
